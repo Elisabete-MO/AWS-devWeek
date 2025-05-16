@@ -1,0 +1,32 @@
+# Diretórios e arquivos de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pyo
+*.pyd
+*.pyc
+*.env
+.env/
+.venv/
+venv/
+Pipfile.lock
+
+# Logs
+*.log
+
+# Diretórios de dependências empacotadas para Lambda
+**/package/
+**/dist/
+**/*.zip
+
+# AWS
+.aws/
+*.pem
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Arquivos temporários
+.DS_Store
+Thumbs.db
