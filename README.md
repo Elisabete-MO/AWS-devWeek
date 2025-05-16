@@ -4,7 +4,6 @@ Este projeto implementa uma arquitetura serverless na AWS para processar pedidos
 
 ---
 
-
 ## 🧩 Diagrama da Arquitetura
 
 ![Arquitetura AWS](docs/arquitetura.png)
@@ -89,6 +88,7 @@ Este projeto foi criado com fins educacionais, mas pode ser expandido ou adaptad
 
 ## ⚖️ Licença
 Este projeto é disponibilizado apenas para fins educacionais e não deve ser utilizado em produção sem revisão completa.
+
 ---
 
 ## 🏫 Créditos
@@ -97,3 +97,4 @@ Este projeto foi desenvolvido como parte da **Semana do Desenvolvedor** promovid
 Organização, documentação e estrutura de repositório adaptadas por  [Elisabete Martins de Oliveira](https://github.com/Elisabete-MO).
 
 ---
+
