@@ -68,12 +68,12 @@ aws cloudformation deploy \
 ---
 
 ## 🎯 Objetivos do Projeto
-✅ Garantir ordenação dos pedidos (SQS FIFO)
-✅ Separar responsabilidades em funções simples e independentes
-✅ Permitir entrada de dados em tempo real(API) e em lote(JSON)
-✅ Processar eventos com resiliência(SQS DLQ) e notificar erros com SNS
-✅ Registrar histórico de pedidos processados
-✅ Usar componentes serverless com mínimo custo operacional
+✅ Garantir ordenação dos pedidos (SQS FIFO)<br>
+✅ Separar responsabilidades em funções simples e independentes<br>
+✅ Permitir entrada de dados em tempo real(API) e em lote(JSON)<br>
+✅ Processar eventos com resiliência(SQS DLQ) e notificar erros com SNS<br>
+✅ Registrar histórico de pedidos processados<br>
+✅ Usar componentes serverless com mínimo custo operacional<br>
 
 ---
 
@@ -94,7 +94,9 @@ Este projeto é disponibilizado apenas para fins educacionais e não deve ser ut
 ## 🏫 Créditos
 
 Este projeto foi desenvolvido como parte da **Semana do Desenvolvedor** promovida pela [Escola da Nuvem](https://escoladanuvem.org), que detém os direitos autorais sobre o conteúdo técnico e pedagógico utilizado como base para a arquitetura e o fluxo do sistema.
-Organização, documentação e estrutura de repositório adaptadas por  [Elisabete Martins de Oliveira](https://github.com/Elisabete-MO).
+
+Organização, documentação e estrutura de repositório adaptadas por:<br>
+[<img loading="lazy" src="https://avatars.githubusercontent.com/Elisabete-MO?v=4" width=115><br><sub>Elisabete Oliveira</sub>](https://github.com/Elisabete-MO)
 
 ---
 
