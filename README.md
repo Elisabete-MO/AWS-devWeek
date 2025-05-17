@@ -20,10 +20,10 @@ Este projeto implementa uma arquitetura 100% serverless na AWS para processar pe
 - **Amazon API Gateway (REST)**
 - **AWS Lambda** (pré-validação, validação profunda, processamento)
 - **Amazon SQS FIFO** + DLQs (fila principal e controle de erros)
+- **Amazon S3** (entrada de pedidos em lote)
 - **Amazon EventBridge** (Custom Event Bus)
 - **Amazon DynamoDB** (armazenamento principal e histórico)
 - **Amazon SNS** (notificações de erro)
-- **Amazon S3** (entrada de pedidos em lote)
 - **AWS CloudFormation** (infraestrutura como código)
 - **Python** para funções Lambda
 - **Git + GitHub** para versionamento e controle
