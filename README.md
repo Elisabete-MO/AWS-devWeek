@@ -1,6 +1,11 @@
 # ☁️ Sistema Serverless de Processamento de Pedidos - AWS
 
-Este projeto implementa uma arquitetura serverless na AWS para processar pedidos com duas formas de entrada: tempo real via API e arquivos em lote via S3. A arquitetura foi pensada para **baixo custo**, **alta escalabilidade** e **modularidade**.
+Este projeto implementa uma arquitetura 100% serverless na AWS para processar pedidos de forma **escalável, eficiente** e com **baixo custo**. O sistema suporta dois tipos de entrada:
+
+### 🔄 Entradas do sistema:
+
+- **API REST** (tempo real): recebe pedidos de usuários, faz pré-validação, enfileira e processa com validação profunda.
+- **Upload S3** (lote): permite envio de arquivos JSON com vários pedidos. Os dados passam por validação, registro de histórico e seguem o mesmo fluxo de pedidos do tempo real.
 
 ---
 
@@ -20,6 +25,8 @@ Este projeto implementa uma arquitetura serverless na AWS para processar pedidos
 - **Amazon SNS** (notificações de erro)
 - **Amazon S3** (entrada de pedidos em lote)
 - **AWS CloudFormation** (infraestrutura como código)
+- **Python** para funções Lambda
+- **Git + GitHub** para versionamento e controle
 
 ---
 
@@ -48,10 +55,13 @@ Este projeto implementa uma arquitetura serverless na AWS para processar pedidos
 ## 📁 Estrutura do Repositório
 
 ```plaintext
-infra/               # Templates CloudFormation
+infra/stacks/        # Templates CloudFormation separados por serviço ou função
+infra/templates/     # Arquivos com parâmetros padrão ou snippets reutilizáveis
 lambdas/             # Código das funções Lambda (Python)
 docs/                # Diagramas e documentação visual
 scripts/             # Scripts auxiliares (deploy/testes)
+README.md            #  Este arquivo
+.gitignore           #  Ignora arquivos desnecessários
 ```
 
 ---
@@ -69,11 +79,12 @@ aws cloudformation deploy \
 
 ## 🎯 Objetivos do Projeto
 ✅ Garantir ordenação dos pedidos (SQS FIFO)<br>
-✅ Separar responsabilidades em funções simples e independentes<br>
+✅ Processar pedidos de forma assíncrona e escalável<br>
+✅ Separar responsabilidades entre validação, processamento e armazenamento em funções simples e independentes<br>
 ✅ Permitir entrada de dados em tempo real(API) e em lote(JSON)<br>
 ✅ Processar eventos com resiliência(SQS DLQ) e notificar erros com SNS<br>
 ✅ Registrar histórico de pedidos processados<br>
-✅ Usar componentes serverless com mínimo custo operacional<br>
+✅ Reduzir custos usando arquitetura serverless<br>
 
 ---
 
